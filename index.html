@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIAO STORE - Game Top-up</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif; /* Set to a static default font */
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            color: black;
+            font-size: 24px;
+            font-weight: normal; /* Ensure regular font weight */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .slide-img {
+            border: 5px solid white;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        figure {
+            gap: 10px;
+        }
+        #image-slide {
+            background-color: #918838;
+        }
+        .slider {
+            text-align: center;
+            background-color: #ddd;
+            padding: 50px;
+            font-size: 18px;
+            color: #666;
+            font-weight: normal;
+        }
+        @keyframes slidy {
+            0% { left: 0%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -0%; }
+        }
+        div#slider { overflow: hidden; }
+        div#slider figure img { width: 20%; float: left; }
+        div#slider figure { 
+            position: relative;
+            width: 457%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 15s slidy infinite; 
+        }
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .game-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 100px; /* Ensures equal width for all game items */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .game-item:hover {
+            transform: scale(1.05);
+        }
+        .game-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+        .game-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+            font-weight: normal; /* Ensure regular font weight */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            font-weight: normal; /* Ensure regular font weight */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Website Name -->
+    <section id="header" class="header">
+    <header>XIAO STORE</header>
+    </section><br><br><br>
+
+    <!-- Section 2: Sliding Image Placeholder -->
+    <section id="image-slide" class="image-slide">
+         <div id="slider">
+             <figure>
+                 <img class="slide-img" src="banner.jpg" alt>
+                 <img class="slide-img" src="anya.jpg" alt>
+                 <img class="slide-img" src="destiny.jpg" alt>
+                 <img class="slide-img" src="Event.jpg" alt>
+             </figure>
+         </div>
+    </section><br><br><br>
+
+    <!-- Section 3: Game List (Games 2 per row) -->
+    <h2 style="text-align: center;">Game List</h2>
+    <section class="game-list">
+        <div class="game-item">
+            <a href="xiao-store-mlbb.html">
+            <img src="mobile-legends.png" alt="Mobile Legends">
+            <p>Mobile Legends</p>
+            </a>
+        </div>
+        <div class="game-item">
+            <img src="genshin.png" alt="Genshin Impact">
+            <p>Genshin Impact</p>
+        </div>
+        <div class="game-item">
+            <img src="honkai-starrail.png" alt="Honkai Star Rail">
+            <p>Honkai Star Rail</p>
+        </div>
+        <div class="game-item">
+            <img src="honor-of-kings.png" alt="Honor Of Kings">
+            <p>Honor Of Kings</p>
+        </div>
+        <div class="game-item">
+            <img src="bgmi.png" alt="BGMI">
+            <p>BGMI</p>
+        </div>
+    </section><br><br><br>
+
+    <!-- Section 4: Footer with Legal Details -->
+    <footer class="footer">
+        <p>&copy; 2024 XIAO STORE. All rights reserved.</p>
+        <p>Legal disclaimers and details about game top-up services.</p>
+    </footer>
+
+</body>
+</html>
